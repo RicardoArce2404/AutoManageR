@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+form {
+    margin-top: 100px;
+    text-align: center;
+}
+#id {
+    width: 10%;
+}
+#num {
+    width: 40%;
+}
+#lot {
+    width: 40%;
+}
+#submit {
+    margin-left: 20px;
+}
+#divResult {
+    text-align: center;
+    margin-top: 7px;
+}
+#result {
+    width: 90%;
+}
