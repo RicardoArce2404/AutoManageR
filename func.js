@@ -44,3 +44,8 @@ function main() {
     document.getElementById('result').textContent = result;
     document.getElementById("form").reset();
 }
+const copy = async () => {
+    let result = document.getElementById('result').innerHTML;
+    try {await navigator.clipboard.writeText(result); alert('Copiado');}
+    catch (err) {alert('No se pudo copiar, error: ' + err)}
+  }
