@@ -1,6 +1,6 @@
 const list = [['du', 5, 20], ['chi', 5, 10], ['le', 20, 30], ['vi', 25, 35],
-              ['ga', 30, 40], ['gu', 35, 45], ['te', 35, 60],
-              ['cho', 40, 60], ['ham', 60, 80], ['ba', 15, 25]]
+              ['ga', 30, 40], ['gu', 35, 45], ['te', 35, 60], ['cho', 40, 60], 
+              ['ham', 60, 80], ['ba', 15, 25], ['in', 25, 0], ['har', 40, 0], ['re', 90, 0]]
 
 var [s1,s2,s3,s4] = ['', '', '', '']
 
@@ -48,4 +48,4 @@ const copy = async () => {
     let result = document.getElementById('result').innerHTML;
     try {await navigator.clipboard.writeText(result); alert('Copiado');}
     catch (err) {alert('No se pudo copiar, error: ' + err)}
-  }
+}
