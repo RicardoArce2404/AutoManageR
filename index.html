@@ -6,38 +6,48 @@
     <script src="func.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>AutoManageR</title>
-</head>
-<body>
-
+</head><body>
+    <div>
 
         <form id="form">
 
-            <input type="number" id="id" placeholder="ID">
-            <input type="number" id="num" placeholder="Cantidad">
-            <select id="lot">
-                <option value="du">Dulce</option>
-                <option value="chi">Chile</option>
-                <option value="ga">Galleta</option>
-                <option value="le">Leche</option>
-                <option value="vi">Vino</option>
-                <option value="gu">Guaraná</option>
-                <option value="cho">Chocolate</option>
-                <option value="te">Té</option>
-                <option value="ham">Hamburguesa</option>
-                <option value="ba">Bancuna</option>
-            </select>
-            <input type="checkbox" id="shop" name="shop">
-            <label for="shop">Tienda abierta</label>
-            <input type="checkbox" id="clp" name="clp">
-            <label for="clp"> Agregar clp</label>
-            <input type="button" onclick="main()" id="submit" value=">">
-
+            <div class="row">
+                <input type="number" id="id" placeholder="ID">
+                <input type="number" id="num" placeholder="Cantidad"> 
+                <select id="lot">
+                    <option value="du">Dulce</option>
+                    <option value="chi">Chile</option>
+                    <option value="ga">Galleta</option>
+                    <option value="le">Leche</option>
+                    <option value="vi">Vino</option>
+                    <option value="gu">Guaraná</option>
+                    <option value="cho">Chocolate</option>
+                    <option value="te">Té</option>
+                    <option value="ham">Hamburguesa</option>
+                    <option value="ba">Bancuna</option>
+                    <option value="in">Intercambio</option>
+                    <option value="har">Hartz</option>
+                    <option value="re">Reciclaje</option>
+                </select>
+            </div>
+            
+            <div class="row">
+                <input type="checkbox" id="shop" name="shop">
+                <label for="shop">Tienda abierta</label>
+                <input type="checkbox" id="clp" name="clp">
+                <label for="clp"> Agregar clp</label>
+                <input type="button" onclick="main()" id="submit" value=">">
+            </div>
         </form>
 
         <div id="divResult">
             <textarea id="result"></textarea>
             <button id="copy" onclick="copy()">Copiar</button>
         </div>
+        <div id="divOrders">
+            <textarea id="orders"></textarea>
+        </div>
 
+    </div>
 </body>
 </html>
